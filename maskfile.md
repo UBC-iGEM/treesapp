@@ -20,5 +20,5 @@ xz -9 COG3338.msa.fasta KOG0382.msa.fasta
 ## decompress
 > Decompress XZ-compressed files
 ```sh
-unxz COG3338.msa.fasta KOG0382.msa.fasta
+unxz COG3338.msa.fasta.xz KOG0382.msa.fasta.xz
 ```

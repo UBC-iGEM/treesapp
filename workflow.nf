@@ -14,8 +14,7 @@ workflow {
 
 process treesapp {
     input:
-    val bin_name
-    path msa_file
+    tuple val(bin_name), path(msa_file)
 
     output:
     path 'output' optional true
