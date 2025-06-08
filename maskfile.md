@@ -14,7 +14,7 @@ rg -P "^$og\t" e6.all_raw_trees_and_algs.tsv \
 ## compress
 > Compress MSA files with XZ
 ```sh
-xz -9 COG3338.msa.fasta KOG0382.msa.fasta
+xz -k -9 COG3338.msa.fasta KOG0382.msa.fasta
 ```
 
 ## decompress
