@@ -7,6 +7,7 @@ if (params.bin == null) {
 workflow {
     Channel
         .value(params.bin)
+        .map { bin ->  [bin, file("${bin}.msa.fasta")] }
         .set { treesapp_ch }
     treesapp(treesapp_ch)
 }
@@ -14,6 +15,7 @@ workflow {
 process treesapp {
     input:
     val bin_name
+    path msa_file
 
     output:
     path 'output' optional true
@@ -21,8 +23,6 @@ process treesapp {
     script:
     """
     export PATH="\$HOME/.pixi/bin:\$PATH"
-    mkdir treesapp_${bin_name}
-    cd treesapp_${bin_name}
-    pixi run treesapp create --verbose --fast -c aCA${bin_name} -i ../${bin_name}.msa.fasta
+    pixi run treesapp create --verbose --fast -c aCA${bin_name} -i ${msa_file}
     """
 }
