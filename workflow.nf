@@ -11,7 +11,7 @@ workflow {
     treesapp(treesapp_ch)
 }
 
-process treesapp_ch {
+process treesapp {
     input:
     val bin_name
 
@@ -20,8 +20,9 @@ process treesapp_ch {
 
     script:
     """
+    export PATH="\$HOME/.pixi/bin:\$PATH"
     mkdir treesapp_${bin_name}
     cd treesapp_${bin_name}
-    treesapp create --verbose --fast -c aCA${bin_name} -i ../${bin_name}.msa.fasta
+    pixi run treesapp create --verbose --fast -c aCA${bin_name} -i ../${bin_name}.msa.fasta
     """
 }
