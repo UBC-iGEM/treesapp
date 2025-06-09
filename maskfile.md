@@ -22,3 +22,16 @@ xz -k -9 COG3338.msa.fasta KOG0382.msa.fasta
 ```sh
 unxz COG3338.msa.fasta.xz KOG0382.msa.fasta.xz
 ```
+
+## ungap (file_stub)
+> Ungap MSAs
+```sh
+seqmagick convert $file_stub.msa.fasta $file_stub.fasta --ungap --prune-empty
+```
+
+## filter
+> Cluster sequences by identity
+```sh
+mask ungap KOG0382
+cd-hit -i KOG0382.fasta -o KOG0382-filtered.fasta -c 0.9 -n 5
+```
