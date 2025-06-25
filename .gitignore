@@ -1,6 +1,9 @@
-.nextflow
-.nextflow.log*
-*.msa.fasta
-*.fasta*
+# Nextflow
+.nextflow*
 work/
 [a-f0-9][a-f0-9]/
+
+# Large sequence files
+*.msa.fasta
+*.fasta*
+e6.all_raw_trees_and_algs.tsv

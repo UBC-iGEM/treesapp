@@ -33,5 +33,5 @@ seqmagick convert $file_stub.msa.fasta $file_stub.fasta --ungap --prune-empty
 > Cluster sequences by identity
 ```sh
 mask ungap KOG0382
-cd-hit -i KOG0382.fasta -o KOG0382-filtered.fasta -c 0.9 -n 5
+cd-hit -i KOG0382.fasta -o KOG0382-filtered.fasta -c 0.5 -n 2
 ```

@@ -1,0 +1,321 @@
+Found enzyme: Carbonic anhydrase (4.2.1.1)
+--- Substrate, Organism, UniProt ID, KM Value (mM) ---
+Substrate: H2CO3, Organism: Dunaliella salina, UniProt ID: , KM Value: 45.0
+Substrate: H2CO3, Organism: Dunaliella salina, UniProt ID: , KM Value: 37.1
+Substrate: H2CO3, Organism: Dunaliella salina, UniProt ID: , KM Value: 37.3
+Substrate: H2CO3, Organism: Homo sapiens, UniProt ID: , KM Value: 19.7
+Substrate: H2CO3, Organism: Homo sapiens, UniProt ID: , KM Value: 48.4
+Substrate: H2CO3, Organism: Homo sapiens, UniProt ID: , KM Value: 54.6
+Substrate: H2CO3, Organism: Homo sapiens, UniProt ID: , KM Value: 73.8
+Substrate: H2CO3, Organism: Homo sapiens, UniProt ID: , KM Value: 80.1
+Substrate: H2CO3, Organism: Mesorhizobium loti, UniProt ID: , KM Value: 112.7
+Substrate: H2CO3, Organism: Danio rerio, UniProt ID: , KM Value: 6.5
+Substrate: H2CO3, Organism: Salmo trutta Labrax Coruhensis, UniProt ID: , KM Value: 0.434
+Substrate: H2CO3, Organism: Python bivittatus, UniProt ID: , KM Value: 21.5
+Substrate: H2CO3, Organism: Dunaliella salina, UniProt ID: , KM Value: 32.2
+Substrate: H2CO3, Organism: Dunaliella salina, UniProt ID: , KM Value: 33.4
+Substrate: H2CO3, Organism: Dunaliella salina, UniProt ID: , KM Value: 28.7
+Substrate: H2CO3, Organism: Dunaliella salina, UniProt ID: , KM Value: 30.1
+Substrate: H2CO3, Organism: Homo sapiens, UniProt ID: , KM Value: 150000.0
+Substrate: H2CO3, Organism: Sulfurihydrogenibium azorense, UniProt ID: , KM Value: 350000.0
+Substrate: H2CO3, Organism: Sulfurihydrogenibium sp. Y, UniProt ID: O3AOP1, KM Value: 110000.0
+Substrate: H2CO3, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 5900.0
+Substrate: H2CO3, Organism: Persephonella marina, UniProt ID: , KM Value: 30000.0
+Substrate: H2CO3, Organism: Thermovibrio ammonificans, UniProt ID: , KM Value: 160000.0
+Substrate: H2CO3, Organism: Plasmodium falciparum, UniProt ID: , KM Value: 72000.0
+Substrate: H2CO3, Organism: Danio rerio, UniProt ID: , KM Value: 130000.0
+Substrate: H2CO3, Organism: Salmo trutta Labrax Coruhensis, UniProt ID: , KM Value: 1585.0
+Substrate: H2CO3, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 3100.0
+Substrate: H2CO3, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 3900.0
+Substrate: H2CO3, Organism: Plasmodium falciparum, UniProt ID: , KM Value: 5400.0
+Substrate: H2CO3, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 5400.0
+Substrate: H2CO3, Organism: Plasmodium falciparum, UniProt ID: , KM Value: 5400.0
+Substrate: H2CO3, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 5400.0
+Substrate: CO2, Organism: Chionodraco hamatus, UniProt ID: , KM Value: 10.41
+Substrate: CO2, Organism: Trematomus bernacchii, UniProt ID: , KM Value: 11.04
+Substrate: CO2, Organism: Micropterus salmoides, UniProt ID: , KM Value: 16.0
+Substrate: CO2, Organism: Oncorhynchus mykiss, UniProt ID: , KM Value: 8.72
+Substrate: CO2, Organism: Oncorhynchus mykiss, UniProt ID: , KM Value: 12.1
+Substrate: CO2, Organism: Oncorhynchus mykiss, UniProt ID: , KM Value: 23.26
+Substrate: CO2, Organism: Mus musculus, UniProt ID: , KM Value: 5.6
+Substrate: CO2, Organism: Mus musculus, UniProt ID: , KM Value: 5.9
+Substrate: CO2, Organism: Mus musculus, UniProt ID: , KM Value: 15.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 15.0
+Substrate: CO2, Organism: Mus musculus, UniProt ID: , KM Value: 13.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 13.0
+Substrate: CO2, Organism: Mus musculus, UniProt ID: , KM Value: 19.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 19.0
+Substrate: CO2, Organism: Mus musculus, UniProt ID: , KM Value: 14.2
+Substrate: CO2, Organism: Mus musculus, UniProt ID: , KM Value: 1.6
+Substrate: CO2, Organism: Oryctolagus cuniculus, UniProt ID: , KM Value: 1.6
+Substrate: CO2, Organism: Mus musculus, UniProt ID: , KM Value: 19.3
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 19.3
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 7.3
+Substrate: CO2, Organism: Acipenser gueldenstaedtii, UniProt ID: , KM Value: 10.9
+Substrate: CO2, Organism: Leishmania chagasi, UniProt ID: , KM Value: 0.0158
+Substrate: CO2, Organism: Tectona grandis, UniProt ID: , KM Value: 15.2
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 0.31
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 0.012
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 0.013
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 0.02
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 1.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 5.3
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 7.1
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 2.3
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 2.8
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 14.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 3.9
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 2.6
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 69.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 11.9
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 6.6
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 9.3
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 46.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 52.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 9.7
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 13.4
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 13.8
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 6.9
+Substrate: CO2, Organism: Bos taurus, UniProt ID: , KM Value: 9.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 9.0
+Substrate: CO2, Organism: Rattus norvegicus, UniProt ID: , KM Value: 9.0
+Substrate: CO2, Organism: Populus tremula, UniProt ID: , KM Value: 9.0
+Substrate: CO2, Organism: Cryptococcus neoformans, UniProt ID: , KM Value: 9.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 4.0
+Substrate: CO2, Organism: Astrosclera willeyana, UniProt ID: , KM Value: 4.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 2.4
+Substrate: CO2, Organism: Oryctolagus cuniculus, UniProt ID: , KM Value: 2.4
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 3.6
+Substrate: CO2, Organism: Oryctolagus cuniculus, UniProt ID: , KM Value: 3.6
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 3.6
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 3.5
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 3.5
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 9.2
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 9.2
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 9.4
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 9.4
+Substrate: CO2, Organism: Solanum tuberosum, UniProt ID: , KM Value: 9.4
+Substrate: CO2, Organism: Petroselinum crispum, UniProt ID: , KM Value: 8.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 8.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 7.5
+Substrate: CO2, Organism: Entamoeba histolytica, UniProt ID: , KM Value: 7.5
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 8.8
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 8.8
+Substrate: CO2, Organism: Populus tremula, UniProt ID: , KM Value: 3.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 3.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 3.0
+Substrate: CO2, Organism: Rattus norvegicus, UniProt ID: , KM Value: 11.0
+Substrate: CO2, Organism: Rattus norvegicus, UniProt ID: , KM Value: 4.2
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 4.2
+Substrate: CO2, Organism: Sus scrofa, UniProt ID: , KM Value: 83.0
+Substrate: CO2, Organism: Mesorhizobium loti, UniProt ID: , KM Value: 31.73
+Substrate: CO2, Organism: Sulfurihydrogenibium yellowstonense, UniProt ID: , KM Value: 26.0
+Substrate: CO2, Organism: Bos taurus, UniProt ID: , KM Value: 12.0
+Substrate: CO2, Organism: Bos taurus, UniProt ID: , KM Value: 21.0
+Substrate: CO2, Organism: Oryctolagus cuniculus, UniProt ID: , KM Value: 6.0
+Substrate: CO2, Organism: Oryctolagus cuniculus, UniProt ID: , KM Value: 27.0
+Substrate: CO2, Organism: Persephonella marina, UniProt ID: , KM Value: 10.8
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 1.8
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 5.8
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 2.7
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 7.2
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 47.1
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 15.3
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 35.3
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 36.2
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 2.9
+Substrate: CO2, Organism: Methanothermobacter thermautotrophicus, UniProt ID: , KM Value: 2.9
+Substrate: CO2, Organism: Colwellia psychrerythraea, UniProt ID: , KM Value: 4700.0
+Substrate: CO2, Organism: Malassezia restricta, UniProt ID: , KM Value: 10.1
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 20.0
+Substrate: CO2, Organism: Neisseria gonorrhoeae, UniProt ID: , KM Value: 20.0
+Substrate: CO2, Organism: Trypanosoma cruzi, UniProt ID: , KM Value: 8.1
+Substrate: CO2, Organism: Malassezia globosa, UniProt ID: , KM Value: 8.1
+Substrate: CO2, Organism: Candida albicans, UniProt ID: , KM Value: 8.2
+Substrate: CO2, Organism: Helicobacter pylori, UniProt ID: , KM Value: 17.0
+Substrate: CO2, Organism: Rhodospirillum rubrum, UniProt ID: , KM Value: 80.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 3.2
+Substrate: CO2, Organism: Halothiobacillus neapolitanus, UniProt ID: , KM Value: 3.2
+Substrate: CO2, Organism: Cavia porcellus, UniProt ID: , KM Value: 22.0
+Substrate: CO2, Organism: Mus musculus, UniProt ID: , KM Value: 22.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 22.0
+Substrate: CO2, Organism: Cavia porcellus, UniProt ID: , KM Value: 10.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 10.0
+Substrate: CO2, Organism: Solanum tuberosum, UniProt ID: , KM Value: 10.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 3.1
+Substrate: CO2, Organism: Clostridium perfringens, UniProt ID: , KM Value: 3.1
+Substrate: CO2, Organism: Cyprinus carpio, UniProt ID: , KM Value: 7.9
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 7.9
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 0.8
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 1.4
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 1.2
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 1.5
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 2.5
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 2.1
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 1.1
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 5.4
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 3.8
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 7.6
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 14.7
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 12.6
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 5.5
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 28.5
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 44.1
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 23.8
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 27.8
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 16.9
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 22.5
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 18.1
+Substrate: CO2, Organism: Sander vitreus, UniProt ID: , KM Value: 18.8
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 18.8
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 6.5
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 11.7
+Substrate: CO2, Organism: Vibrio cholerae serotype, UniProt ID: O1, KM Value: 11.7
+Substrate: CO2, Organism: Macropus eugenii desmarest, UniProt ID: , KM Value: 2.67
+Substrate: CO2, Organism: Lacticaseibacillus rhamnosus, UniProt ID: , KM Value: 7.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 7.0
+Substrate: CO2, Organism: Conticribra weissflogii, UniProt ID: , KM Value: 0.087
+Substrate: CO2, Organism: Anguilla anguilla, UniProt ID: , KM Value: 21.72
+Substrate: CO2, Organism: Malassezia pachydermatis, UniProt ID: , KM Value: 39.7
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 25.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 34.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 17.3
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 15.7
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 17.1
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 12.8
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 26.2
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 6.09
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 14.5
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 47.6
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 16.7
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 12.2
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 16.2
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 21.8
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 13.6
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 16.3
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 19.1
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 33.4
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 43.3
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 9.45
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 25.4
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 33.9
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 34.2
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 51.4
+Substrate: CO2, Organism: Leishmania chagasi, UniProt ID: , KM Value: 59000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 88000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 85000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 130000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 94000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 55000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 5500.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 9300.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 42000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 150000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 155000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 108000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 161000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 120000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 120000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 120000.0
+Substrate: CO2, Organism: Brucella suis, UniProt ID: , KM Value: 39000.0
+Substrate: CO2, Organism: Brucella suis, UniProt ID: , KM Value: 39000.0
+Substrate: CO2, Organism: Brucella suis, UniProt ID: , KM Value: 3900.0
+Substrate: CO2, Organism: Brucella suis, UniProt ID: , KM Value: 8900.0
+Substrate: CO2, Organism: Saccharomyces cerevisiae, UniProt ID: , KM Value: 98000.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 0.0017
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 0.00016
+Substrate: CO2, Organism: Sordaria macrospora, UniProt ID: , KM Value: 1210.0
+Substrate: CO2, Organism: Malassezia globosa, UniProt ID: , KM Value: 69000.0
+Substrate: CO2, Organism: Persephonella marina, UniProt ID: , KM Value: 30000.0
+Substrate: CO2, Organism: Mytilus galloprovincialis, UniProt ID: , KM Value: 35000.0
+Substrate: CO2, Organism: Mytilus galloprovincialis, UniProt ID: , KM Value: 36000.0
+Substrate: CO2, Organism: Plasmodium falciparum, UniProt ID: , KM Value: 5400.0
+Substrate: CO2, Organism: Plasmodium falciparum, UniProt ID: , KM Value: 72000.0
+Substrate: CO2, Organism: Porphyromonas gingivalis, UniProt ID: , KM Value: 15000.0
+Substrate: CO2, Organism: Enterobacter sp., UniProt ID: B13, KM Value: 56000.0
+Substrate: CO2, Organism: Synechocystis sp. PCC 6803 / Kazusa, UniProt ID: , KM Value: 1190.0
+Substrate: CO2, Organism: Synechocystis sp. PCC 6803 / Kazusa, UniProt ID: , KM Value: 17300.0
+Substrate: CO2, Organism: Pseudoalteromonas haloplanktis ANT/505, UniProt ID: , KM Value: 1900.0
+Substrate: CO2, Organism: Sulfurihydrogenibium azorense, UniProt ID: , KM Value: 350000.0
+Substrate: CO2, Organism: Nostoc commune, UniProt ID: , KM Value: 83000.0
+Substrate: CO2, Organism: Escherichia coli, UniProt ID: , KM Value: 6900.0
+Substrate: CO2, Organism: Trichomonas vaginalis, UniProt ID: , KM Value: 80000.0
+Substrate: CO2, Organism: Trichomonas vaginalis, UniProt ID: , KM Value: 44000.0
+Substrate: CO2, Organism: Malassezia restricta, UniProt ID: , KM Value: 107000.0
+Substrate: CO2, Organism: Gyrodactylus salaris, UniProt ID: , KM Value: 7580.0
+Substrate: CO2, Organism: Entamoeba histolytica, UniProt ID: , KM Value: 89000.0
+Substrate: CO2, Organism: Neisseria gonorrhoeae, UniProt ID: , KM Value: 3133.0
+Substrate: CO2, Organism: Caenorhabditis elegans, UniProt ID: , KM Value: 66.8
+Substrate: CO2, Organism: Mycobacterium tuberculosis, UniProt ID: , KM Value: 37000.0
+Substrate: CO2, Organism: Mycobacterium tuberculosis, UniProt ID: , KM Value: 40000.0
+Substrate: CO2, Organism: Trypanosoma cruzi, UniProt ID: , KM Value: 149000.0
+Substrate: CO2, Organism: Clostridium perfringens, UniProt ID: , KM Value: 4800.0
+Substrate: CO2, Organism: Columba livia, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Drosophila melanogaster, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Astrosclera willeyana, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Columba livia, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Drosophila melanogaster, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Astrosclera willeyana, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Columba livia, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Drosophila melanogaster, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Astrosclera willeyana, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Columba livia, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Drosophila melanogaster, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Astrosclera willeyana, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Homo sapiens, UniProt ID: , KM Value: 110000.0
+Substrate: CO2, Organism: Nostoc sp., UniProt ID: , KM Value: 4100.0
+Substrate: CO2, Organism: Porphyromonas gingivalis, UniProt ID: , KM Value: 540000.0
+Substrate: CO2, Organism: Vibrio cholerae serotype, UniProt ID: O1, KM Value: 70000.0
+Substrate: CO2, Organism: Lacticaseibacillus rhamnosus, UniProt ID: , KM Value: 14100.0
+Substrate: CO2, Organism: Flaveria bidentis, UniProt ID: , KM Value: 7500000.0
+Substrate: CO2, Organism: Conticribra weissflogii, UniProt ID: , KM Value: 33000.0
+Substrate: CO2, Organism: Conticribra weissflogii, UniProt ID: , KM Value: 33000.0
+Substrate: CO2, Organism: Malassezia pachydermatis, UniProt ID: , KM Value: 9700.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 1400.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 10300.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 790.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 600.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 630.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 3100.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 2000.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 400.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 7000.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 7900.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 7100.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 5900.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 10200.0
+Substrate: CO2, Organism: Sordaria macrospora, UniProt ID: , KM Value: 1300.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 1300.0
+Substrate: CO2, Organism: Sordaria macrospora, UniProt ID: , KM Value: 1300.0
+Substrate: CO2, Organism: Methanosarcina thermophila, UniProt ID: , KM Value: 1300.0
+Substrate: 4-nitrophenyl acetate, Organism: Bacillus subtilis, UniProt ID: , KM Value: 9.09
+Substrate: 4-nitrophenyl acetate, Organism: Homo sapiens, UniProt ID: , KM Value: 2.94
+Substrate: 4-nitrophenyl acetate, Organism: Homo sapiens, UniProt ID: , KM Value: 15.4
+Substrate: 4-nitrophenyl acetate, Organism: Homo sapiens, UniProt ID: , KM Value: 2.92
+Substrate: 4-nitrophenyl acetate, Organism: Homo sapiens, UniProt ID: , KM Value: 15.3
+Substrate: 4-nitrophenyl acetate, Organism: Homo sapiens, UniProt ID: , KM Value: 3.025
+Substrate: 4-nitrophenyl acetate, Organism: Homo sapiens, UniProt ID: , KM Value: 30.53
+Substrate: 4-nitrophenyl acetate, Organism: Bos taurus, UniProt ID: , KM Value: 0.625
+Substrate: 4-nitrophenyl acetate, Organism: Bos taurus, UniProt ID: , KM Value: 1.1
+Substrate: 4-nitrophenyl acetate, Organism: Bos taurus, UniProt ID: , KM Value: 0.785
+Substrate: 4-nitrophenyl acetate, Organism: Bos taurus, UniProt ID: , KM Value: 0.541
+Substrate: 4-nitrophenyl acetate, Organism: Bos taurus, UniProt ID: , KM Value: 0.862
+Substrate: 4-nitrophenyl acetate, Organism: Bos taurus, UniProt ID: , KM Value: 0.002409
+Substrate: 4-nitrophenyl acetate, Organism: Ovis aries, UniProt ID: , KM Value: 0.01787
+Substrate: 4-nitrophenyl acetate, Organism: Oncorhynchus mykiss, UniProt ID: , KM Value: 5.1
+Substrate: 4-nitrophenyl acetate, Organism: Corynebacterium flavescens, UniProt ID: , KM Value: 5.12
+Substrate: p-nitrophenyl acetate, Organism: Elephas trogontherii, UniProt ID: , KM Value: 6.8
+Substrate: p-nitrophenyl acetate, Organism: Elephas trogontherii, UniProt ID: , KM Value: 3.86
+Substrate: p-nitrophenyl acetate, Organism: Elephas trogontherii, UniProt ID: , KM Value: 4.83
+Substrate: p-nitrophenyl acetate, Organism: Elephas trogontherii, UniProt ID: , KM Value: 4.525
+Substrate: HCO3-, Organism: Homo sapiens, UniProt ID: , KM Value: 26.0
+Substrate: HCO3-, Organism: Homo sapiens, UniProt ID: , KM Value: 37.0
+Substrate: HCO3-, Organism: Pisum sativum, UniProt ID: , KM Value: 30.0
+Substrate: HCO3-, Organism: Halothiobacillus neapolitanus, UniProt ID: , KM Value: 9.3
+Substrate: 4-nitrophenyl phosphate, Organism: Homo sapiens, UniProt ID: , KM Value: 0.935
+Substrate: 4-nitrophenyl phosphate, Organism: Homo sapiens, UniProt ID: , KM Value: 2.195
+Substrate: COS, Organism: Bos taurus, UniProt ID: , KM Value: 1.86
+Substrate: histamine, Organism: Nakaseomyces glabratus, UniProt ID: , KM Value: 7.9

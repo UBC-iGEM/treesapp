@@ -1,15 +1,17 @@
 params.bin = null
+params.file = null
 
 if (params.bin == null) {
     error "Missing required parameter (bin name): --bin"
 }
 
-bins = params.bin.split(',') as List
+if (params.file == null) {
+    error "Missing required parameter (input filename): --file"
+}
 
 workflow {
     Channel
-        .from(bins)
-        .map { bin -> [bin, file("${bin}.msa.fasta")] }
+        .value([ params.bin, file(params.file) ])
         .set { bin_ch }
 
     treesapp(bin_ch)
