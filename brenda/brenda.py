@@ -15,6 +15,7 @@ class TempData:
 class BrendaVariant:
     organism: str
     UniprotID: str | None
+    KM: float32
     ph: PHdata
     temp: TempData
 
