@@ -27,14 +27,20 @@ class Entry:
             print(f"Error validating {self.prefix}.{self.id}: {e}")
             return False
 
-    def validate(self) -> bool:
-        return self.validate_tax() and self.validate_identifier()
+    def validate(self, index: int) -> bool:
+        if not self.validate_tax():
+            print(f"Tax data for item {index} is missing!")
+            return False
+        if not self.validate_identifier():
+            print(f"ID for item {index} ({self.id}) is missing!")
+            return False
+        return True
 
 
 class TSV:
     entries: list[Entry]
 
-    def __init__(self, tsv: str):
+    def __init__(self, tsv: str) -> None:
         tsv = tsv.strip()
         lines = tsv.split('\n')
         self.entries = []
@@ -44,9 +50,9 @@ class TSV:
             assert len(parts) == 2
 
             (identifier, tax) = (parts[0], parts[1])
-            identifier_parts = identifier.split('.')
+            prefix, *rest = identifier.split('.')
 
-            (prefix, id) = (identifier_parts[0], str.join("", identifier_parts[1:]))
+            id = '.'.join(rest)
             self.entries.append(Entry(prefix, id, tax))
 
     def __str__(self) -> str:
@@ -58,10 +64,8 @@ class TSV:
     def valid_sequences(self) -> set[str]:
         out = set()
         for (i, item) in enumerate(self.entries):
-            if item.validate():
+            if item.validate(i + 1):
                 out.add(f"{item.prefix}.{item.id}")
-            else:
-                print(f"Item {i+1} is invalid!")
         return out
 
 class FASTA:
@@ -71,33 +75,48 @@ class FASTA:
         self.entries = []
         records = fasta.split('>')
         for record in records:
-            parts = record.split('\n')
-            id = parts[0].strip()
-            self.entries.append((id, record))
+            if not record.strip():
+                continue
+            header, *seq = record.split('\n')
+            id = header.split('.', 1)[1]
+            self.entries.append((id, '\n'.join(seq)))
 
     def __str__(self) -> str:
         out = ""
-        for _, record in self.entries:
-            out += f">{record}"
+        for id, record in self.entries:
+            out += f">{id}\n{record}"
         return out
 
-    def filter(self, valid_entries: set[str]) -> "FASTA":
-        filtered = []
+    def filter(self, valid_entries: set[str]) -> None:
+        filtered: list[tuple[str, str]] = []
         for id, record in self.entries:
             if id in valid_entries:
-                filtered.append(record)
-        return FASTA(">".join(filtered))
+                filtered.append((id, record))
+        self.entries = filtered
+
+    def elim_doubles(self) -> None:
+        visited = set()
+        unique_entries: list[tuple[str, str]] = []
+        for (id, seq) in self.entries:
+            sequence = seq.replace(' ', '').replace('\r', '').replace('\n', '')
+            if sequence not in visited:
+                visited.add(sequence)
+                unique_entries.append((id, seq))
+
+        print(f"Doubling removal eliminated {len(self.entries) - len(unique_entries)} sequences")
+        self.entries = unique_entries
 
 
 if __name__ == "__main__":
     valid_entries: set[str] = set()
     current_path = Path(__file__).parent.resolve()
-    with open(current_path / "CAmap.tsv") as tsv_file:
+    with open(current_path / "treesapp-inputs/map.tsv") as tsv_file:
         tsv = tsv_file.read()
         tsv_parsed = TSV(tsv)
         valid_entries = tsv_parsed.valid_sequences()
-    with open(current_path / "CAseq.fa") as fasta_file:
+    with open(current_path / "treesapp-inputs/seq.fa") as fasta_file:
         fasta = FASTA(fasta_file.read())
-        new_fasta = fasta.filter(valid_entries)
-        with open(current_path / "nova.fa", 'w') as out:
-            out.write(str(new_fasta))
+        fasta.elim_doubles()
+        fasta.filter(valid_entries)
+        with open(current_path / "treesapp-outputs/nova.fa", 'w') as out:
+            out.write(str(fasta))
