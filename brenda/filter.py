@@ -1,6 +1,7 @@
 from pathlib import Path
+
 from Bio import Entrez
-Entrez.email = "drylab@ubcigem.com"
+from helpers import FASTA
 
 class Entry:
     prefix: str
@@ -68,55 +69,18 @@ class TSV:
                 out.add(f"{item.prefix}.{item.id}")
         return out
 
-class FASTA:
-    entries: list[tuple[str, str]]
 
-    def __init__(self, fasta: str) -> None:
-        self.entries = []
-        records = fasta.split('>')
-        for record in records:
-            if not record.strip():
-                continue
-            header, *seq = record.split('\n')
-            id = header.split('.', 1)[1]
-            self.entries.append((id, '\n'.join(seq)))
+valid_entries: set[str] = set()
+current_path = Path(__file__).parent.resolve()
 
-    def __str__(self) -> str:
-        out = ""
-        for id, record in self.entries:
-            out += f">{id}\n{record}"
-        return out
+with open(current_path / "treesapp-inputs/map.tsv") as tsv_file:
+    tsv = tsv_file.read()
+    tsv_parsed = TSV(tsv)
+    valid_entries = tsv_parsed.valid_sequences()
 
-    def filter(self, valid_entries: set[str]) -> None:
-        filtered: list[tuple[str, str]] = []
-        for id, record in self.entries:
-            if id in valid_entries:
-                filtered.append((id, record))
-        self.entries = filtered
-
-    def elim_doubles(self) -> None:
-        visited = set()
-        unique_entries: list[tuple[str, str]] = []
-        for (id, seq) in self.entries:
-            sequence = seq.replace(' ', '').replace('\r', '').replace('\n', '')
-            if sequence not in visited:
-                visited.add(sequence)
-                unique_entries.append((id, seq))
-
-        print(f"Doubling removal eliminated {len(self.entries) - len(unique_entries)} sequences")
-        self.entries = unique_entries
-
-
-if __name__ == "__main__":
-    valid_entries: set[str] = set()
-    current_path = Path(__file__).parent.resolve()
-    with open(current_path / "treesapp-inputs/map.tsv") as tsv_file:
-        tsv = tsv_file.read()
-        tsv_parsed = TSV(tsv)
-        valid_entries = tsv_parsed.valid_sequences()
-    with open(current_path / "treesapp-inputs/seq.fa") as fasta_file:
-        fasta = FASTA(fasta_file.read())
-        fasta.elim_doubles()
-        fasta.filter(valid_entries)
-        with open(current_path / "treesapp-outputs/nova.fa", 'w') as out:
-            out.write(str(fasta))
+with open(current_path / "treesapp-inputs/seq.fa") as fasta_file:
+    fasta = FASTA(fasta_file.read())
+    fasta.elim_doubles()
+    fasta.filter(valid_entries)
+    with open(current_path / "treesapp-outputs/nova.fa", 'w') as out:
+        out.write(str(fasta))

@@ -7,14 +7,15 @@ dependencies = [
     "biopython>=1.85",
     "black>=25.1.0",
     "brendapyrser>=0.0.2",
+    "dataclasses-json>=0.6.7",
+    "ipykernel>=6.29.5",
     "matplotlib>=3.10.3",
     "numpy>=2.3.0",
+    "requests>=2.32.4",
 ]
 
 [tool.basedpyright]
 typeCheckingMode = "basic"
 
 [dependency-groups]
-dev = [
-    "ipykernel>=6.29.5",
-]
+dev = ["ipykernel>=6.29.5"]

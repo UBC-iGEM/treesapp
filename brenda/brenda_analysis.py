@@ -5,7 +5,7 @@ from brendapyrser import BRENDA
 from numpy import average
 
 # Initialize BRENDA parser
-# brenda = BRENDA("brenda_db.txt")
+brenda = BRENDA("brenda_db.txt")
 
 # %%
 # Retrieve carbonic anhydrase reaction (EC 4.2.1.1)
