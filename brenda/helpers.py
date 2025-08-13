@@ -1,14 +1,14 @@
 from dataclasses import dataclass
 from typing import Optional
 from Bio import Entrez
-from dataclasses_json import dataclass_json
 
-@dataclass_json
 @dataclass
 class BrendaData:
     organism: str
-    accessions: Optional[list[str]] = None
-    tax_ids: Optional[list[str]] = None
+    accession: Optional[str] = None
+    tax_id: Optional[str] = None
+    fasta: Optional[str] = None
+    locus: Optional[str] = None
     km: Optional[float] = None
     kcat: Optional[float] = None
     catalytic_efficiency: Optional[float] = None
@@ -16,11 +16,6 @@ class BrendaData:
     ph_range: Optional[tuple[float, float]] = None
     temp_optima: Optional[float] = None
     temp_range: Optional[tuple[float, float]] = None
-
-@dataclass_json
-@dataclass
-class BrendaEntries:
-    entries: dict[str, BrendaData]
 
 
 Entrez.email = "drylab@ubcigem.com"

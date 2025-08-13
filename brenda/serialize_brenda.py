@@ -2,10 +2,11 @@ from concurrent.futures import ThreadPoolExecutor
 from time import sleep
 from typing import Optional
 from numpy import float32, float64
+from dataclass_csv import DataclassWriter
 
 # %% Load DB into memory
 from brendapyrser import BRENDA
-from helpers import BrendaEntries, BrendaData
+from helpers import BrendaData
 brenda = BRENDA("inputs/brenda_db.txt")
 ec = "4.2.1.1"
 rxn = brenda.reactions.get_by_id(ec)
@@ -73,10 +74,10 @@ for temp_type in ["optimum", "range"]:
             entry.temp_range = (value[0], value[1])
 
 
-# %% Add UniProtKB accession data
-def get_uniprot_id(organism: str) -> Optional[tuple[str, list[str], list[str]]]:
+# %% Add UniProtKB accession data and sequence
+def get_uniprot_id(organism: str) -> Optional[tuple[str, str, str, str|None, str|None]]:
     import requests
-    query = f'ec:{ec} AND (organism_name:"{organism}")'
+    query = f'(ec:{ec}) AND (organism_name:"{organism}") AND (taxonomy_id:2)'
     params = {
         "query": query,
         "fields": "accession,organism_id",
@@ -86,37 +87,55 @@ def get_uniprot_id(organism: str) -> Optional[tuple[str, list[str], list[str]]]:
 
     UNIPROT_SEARCH_URL = "https://rest.uniprot.org/uniprotkb/search"
     for _ in range(1, 5):
-        r = requests.get(UNIPROT_SEARCH_URL, params=params, timeout=30)
-        r.raise_for_status()
-        results = r.json().get("results", [])
-        if results:
-            accessions, tax_ids = [], []
-            for result in results:
-                accessions.append(result.get("primaryAccession"))
-                tax_ids.append(result.get("organism").get("taxonId"))
-            return organism, accessions, tax_ids
-        else:
-            sleep(0.5)
-            continue
+        try:
+            r = requests.get(UNIPROT_SEARCH_URL, params=params, timeout=10)
+            r.raise_for_status()
+            results = r.json().get("results", [])
+            if results:
+                result = results[0]
+                accession = result.get("primaryAccession")
+                tax_id = result.get("organism").get("taxonId")
+            else:
+                return None
+        except:
+            return None
+        try:
+            fasta_url = f"https://rest.uniprot.org/uniprotkb/{accession}.fasta"
+            r = requests.get(fasta_url, timeout=10)
+            r.raise_for_status()
+            fasta = r.text
+        except:
+            fasta = None
+        try:
+            json_url = f"https://rest.uniprot.org/uniprotkb/{accession}.json"
+            r = requests.get(json_url, timeout=10)
+            r.raise_for_status()
+            json = r.json()
+            gene = json.get("genes")[0]
+            locus = gene.get("orderedLocusNames")[0].get("value")
+        except:
+            locus = None
+        return organism, accession, tax_id, fasta, locus
     return None
 
 with ThreadPoolExecutor(max_workers=50) as ex:
     for result in ex.map(get_uniprot_id, data_entries.keys()):
         if result is None:
             continue
-        organism, acc, tax = result
-        data_entries[organism].accessions = acc
-        data_entries[organism].tax_ids = tax
+        organism, acc, tax, fasta, locus = result
+        data_entries[organism].accession = acc
+        data_entries[organism].tax_id    = tax
+        data_entries[organism].fasta     = fasta
+        data_entries[organism].locus     = locus
 
-final_map = { }
-for data in data_entries.values():
-        for tax_id in (data.tax_ids or []):
-            final_map[tax_id] = data
-
-brenda_data = BrendaEntries(entries=final_map)
-
+brenda_data = [ entry for entry in data_entries.values() if entry.accession is not None ]
+num_locus = 0
+for item in brenda_data:
+    if item.locus is not None:
+        num_locus += 1
+print(f"Loci: {num_locus}")
 
 # %% Export to JSON
-with open("outputs/brenda_serialized.json", "w") as f:
-    f.write(brenda_data.to_json(indent=4))
-    print(f"Saved {len(brenda_data.entries)} organism-specific entries to 'brenda_serialized.json'")
+with open("outputs/brenda_serialized.csv", "w") as f:
+    DataclassWriter(f, brenda_data, BrendaData).write()
+    print(f"Saved {len(brenda_data)} organism-specific entries to 'outputs/brenda_serialized.csv'")
