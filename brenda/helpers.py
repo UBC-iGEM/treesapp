@@ -1,7 +1,9 @@
 from dataclasses import dataclass
 from typing import Optional
 from Bio import Entrez
+from dataclasses_json import dataclass_json
 
+@dataclass_json
 @dataclass
 class BrendaData:
     organism: str
@@ -16,6 +18,11 @@ class BrendaData:
     ph_range: Optional[tuple[float, float]] = None
     temp_optima: Optional[float] = None
     temp_range: Optional[tuple[float, float]] = None
+
+@dataclass_json
+@dataclass
+class BrendaEntries:
+    entries: list[BrendaData]
 
 
 Entrez.email = "drylab@ubcigem.com"

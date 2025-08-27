@@ -1,12 +1,10 @@
 from concurrent.futures import ThreadPoolExecutor
-from time import sleep
 from typing import Optional
 from numpy import float32, float64
-from dataclass_csv import DataclassWriter
+from brendapyrser import BRENDA
+from helpers import BrendaData, BrendaEntries
 
 # %% Load DB into memory
-from brendapyrser import BRENDA
-from helpers import BrendaData
 brenda = BRENDA("inputs/brenda_db.txt")
 ec = "4.2.1.1"
 rxn = brenda.reactions.get_by_id(ec)
@@ -128,14 +126,15 @@ with ThreadPoolExecutor(max_workers=50) as ex:
         data_entries[organism].fasta     = fasta
         data_entries[organism].locus     = locus
 
-brenda_data = [ entry for entry in data_entries.values() if entry.accession is not None ]
-num_locus = 0
-for item in brenda_data:
-    if item.locus is not None:
-        num_locus += 1
-print(f"Loci: {num_locus}")
+brenda_data = BrendaEntries(
+    sorted(
+        (entry for entry in data_entries.values() if entry.accession is not None),
+        key=lambda x: x.catalytic_efficiency or 0,
+        reverse=True
+    )
+)
 
 # %% Export to JSON
-with open("outputs/brenda_serialized.csv", "w") as f:
-    DataclassWriter(f, brenda_data, BrendaData).write()
-    print(f"Saved {len(brenda_data)} organism-specific entries to 'outputs/brenda_serialized.csv'")
+with open("outputs/brenda_serialized.json", "w") as f:
+    json = brenda_data.to_json(indent=4)
+    f.write(json)
