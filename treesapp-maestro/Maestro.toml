@@ -1,0 +1,15 @@
+[executor.default]
+type = "Local"
+staging_mode = "Copy"
+
+[args]
+# cluster/ungap/extract
+mode = "cluster"
+# An orthologous group to extract
+og = "COG3338"
+# An EggNOG database to extract from
+db = "e6.all_raw_trees_and_algs.tsv"
+# A file to ungap
+ungap = "COG3338.fasta"
+# A file to run a clustering workflow on
+cluster_input = "COG3338.msa.fasta"

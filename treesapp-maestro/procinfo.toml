@@ -1,0 +1,15 @@
+# Clustering workflow
+[":1:0"]
+executor = "default"
+deps = ["cd-hit"]
+
+# Ungap workflow
+[":1:0"]
+executor = "default"
+deps = ["seqmagick"]
+
+# MSA extraction workflow
+[":1:0"]
+executor = "default"
+deps = ["rg"]
+
